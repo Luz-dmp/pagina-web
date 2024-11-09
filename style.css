@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/fondo.1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/fondo.1.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,10 +42,13 @@ header {
 
 .menu .navbar {
     display: flex;
+    align-items: center;
+    list-style: none;
 }
 
 .menu .navbar ul {
     display: flex;
+    flex-direction: row;
 }
 
 .menu .navbar ul li {
@@ -64,13 +67,14 @@ header {
     color: #ca7950;
 }
 
-#menu {
+.menu-icono {
     display: none;
+    cursor: pointer;
+    width: 25px;
 }
 
-.menu-icono {
-    width: 25px;
-    cursor: pointer;
+#menu-checkbox {
+    display: none;
 }
 
 .menu label {
@@ -79,14 +83,6 @@ header {
 
 .header-content {
     text-align: center;
-}
-
-.btn-1 {
-    display: inline-block;
-    padding: 11px 15px;
-    background-color: #ffdfae;
-    color: #323337;
-    text-transform: uppercase;
 }
 
 .header-content h1 {
@@ -104,82 +100,44 @@ header {
     margin-bottom: 25px;
 }
 
-.acs-content {
+.acs-content, .voluntariados, .services {
+    padding: 50px;
     text-align: center;
-    background-color: rgb(240, 226, 209);
-    padding: 250px;
-    position: relative;
 }
 
-.acs-content h2 {
+.acs-content h2, .voluntariado-content h2, .aircleanspace-content h2 {
     font-size: 55px;
-    line-height: 70px;
     color: rgb(243, 188, 136);
     text-transform: uppercase;
-    padding: 0 250px;
     margin-bottom: 35px;
 }
 
-.txt-p {
-    font-size: 16px;
-    color: #323337;
-    padding: 0 250px;
-    margin-bottom: 50px;
-}
-
-.voluntariados {
-    padding: 250px;
-    background-color: #e1e2e6;
-    position: relative;
-}
-
-.services {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/fondo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 250px;
-}
-
-.services-group {
+.services-group, .acs-group, .voluntariado-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.services-1 h3 {
-    color: bisque;
-    font-size: 18px;
-}
-
-.registro {
-    padding: 250px;
-    padding-bottom: 250px;
-    position: relative;
-    width: 400px;
-    background-color: darkblue;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 4px;
-    color: beige;
-}
-
-/* Media Query para móviles */
 @media (max-width: 800px) {
-    body {
-        font-size: 14px; 
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
     .menu-icono {
-        width: 20px;
-        display: block; /* Mostrar icono de menú en móviles */
+        display: block;
+    }
+
+    #menu-checkbox:checked ~ .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
     }
 
     .header-content h1 {
@@ -191,39 +149,33 @@ header {
         padding: 0 20px;
     }
 
-    .menu .navbar {
-        display: none; /* Ocultar el menú en móviles */
+    .services-group, .acs-group, .voluntariado-group {
         flex-direction: column;
         align-items: center;
-    }
-
-    .menu-icono {
-        display: block; /* Botón menú visible en móvil */
-        cursor: pointer;
-    }
-
-    #menu:checked ~ .navbar {
-        display: flex; /* Mostrar menú al hacer clic */
-    }
-
-    .services-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .services-1 {
-        margin: 20px 0;
-    }
-
-    .registro {
-        width: 90%;
-        padding: 40px 20px;
-        margin: auto;
     }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* Productos */
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.products-item {
+    flex: 1 1 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.products-item h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+.products-item p {
+    color: #666;
+    font-size: 15px;
 }
