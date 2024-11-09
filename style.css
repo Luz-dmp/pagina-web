@@ -201,6 +201,7 @@ header {
 }
 
 @media (max-width: 800px) {
+
     .logo {
         font-size: 20px;
     }
@@ -249,19 +250,6 @@ header {
         width: 90%;
         padding: 20px;
     }
-
-    .menu .navbar {
-        display: none;
-    }
-
-    .menu .navbar.show {
-        display: flex;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .show {
