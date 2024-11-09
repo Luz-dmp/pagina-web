@@ -240,7 +240,7 @@ color: beige;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width <= 800px) {
 
     body {
         font-size: 14px; 
