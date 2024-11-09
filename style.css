@@ -1,4 +1,4 @@
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/fondo.1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/fondo.1.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,9 +40,16 @@ header {
     justify-content: space-between;
 }
 
+.menu .navbar {
+    display: flex;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
 .menu .navbar ul li {
     position: relative;
-    float: left;
 }
 
 .menu .navbar ul li a {
@@ -63,10 +70,10 @@ header {
 
 .menu-icono {
     width: 25px;
+    cursor: pointer;
 }
 
 .menu label {
-    cursor: pointer;
     display: none;
 }
 
@@ -120,90 +127,19 @@ header {
     margin-bottom: 50px;
 }
 
-.acs-group {
-    position: relative;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.acs-1 img {
-    width: 200px;
-    padding-bottom: 100px;
-}
-
-.acs-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 .voluntariados {
     padding: 250px;
     background-color: #e1e2e6;
     position: relative;
 }
 
-.voluntariado-content {
-    text-align: center;
-    padding: 250px;
-}
-
-.voluntariado-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #323337;
-    text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
-}
-
-.voluntariado-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-.voluntariados-1 h3 {
-    text-align: center;
-    color: #323337;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.voluntariados-1 p {
-    text-align: center;
-    font-size: 15px;
-    line-height: 20px;
-    padding: 100;
-    margin-bottom: 25px;
-}
-
 .services {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagenes/fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 250px;
-}
-
-.aircleanspace-content {
-    text-align: center;
-}
-
-.aircleanspace-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: rgb(243, 188, 136);
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.aircleanspace-content p {
-    font-size: 16px;
-    color: #e1e2e6;
-    margin-bottom: 50px;
-    padding: 0 100px;
 }
 
 .services-group {
@@ -218,17 +154,23 @@ header {
 }
 
 .registro {
-    padding: 30px;
+    padding: 250px;
+    padding-bottom: 250px;
+    position: relative;
     width: 400px;
     background-color: darkblue;
-    margin: 100px auto;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     border-radius: 4px;
     color: beige;
 }
 
+/* Media Query para móviles */
 @media (max-width: 800px) {
     body {
-        font-size: 14px;
+        font-size: 14px; 
     }
 
     .logo {
@@ -237,6 +179,7 @@ header {
 
     .menu-icono {
         width: 20px;
+        display: block; /* Mostrar icono de menú en móviles */
     }
 
     .header-content h1 {
@@ -248,30 +191,19 @@ header {
         padding: 0 20px;
     }
 
-    .menu .navbar ul {
+    .menu .navbar {
+        display: none; /* Ocultar el menú en móviles */
         flex-direction: column;
+        align-items: center;
     }
 
-    .menu .navbar ul li {
-        float: none;
+    .menu-icono {
+        display: block; /* Botón menú visible en móvil */
+        cursor: pointer;
     }
 
-    .acs-group, .voluntariado-group {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .acs-1, .voluntariados-1 {
-        flex: 1;
-        padding: 20px;
-    }
-
-    .services {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/fondo.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 40px 20px;
+    #menu:checked ~ .navbar {
+        display: flex; /* Mostrar menú al hacer clic */
     }
 
     .services-group {
@@ -279,7 +211,7 @@ header {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .services-1 {
         margin: 20px 0;
     }
@@ -287,25 +219,7 @@ header {
     .registro {
         width: 90%;
         padding: 40px 20px;
-        background-color: darkblue;
         margin: auto;
-        border-radius: 4px;
-        color: beige;
-    }
-
-    .registro form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .registro input {
-        margin: 10px 0;
-        padding: 10px;
-    }
-
-    .registro button {
-        padding: 10px;
-        cursor: pointer;
     }
 }
 
