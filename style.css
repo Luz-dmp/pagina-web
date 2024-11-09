@@ -51,13 +51,9 @@ header {
     left: 0;
 }
 
-.menu .navbar ul li {
-    float: left;
-}
-
 .menu .navbar ul li a {
     font-size: 18px;
-    padding: 20px;
+    padding: 15px;
     color: beige;
     display: block;
     font-weight: 600;
@@ -73,11 +69,6 @@ header {
 
 .menu-icono {
     width: 25px;
-    cursor: pointer;
-}
-
-.menu label {
-    display: block;
     cursor: pointer;
 }
 
@@ -122,25 +113,9 @@ header {
     margin-bottom: 50px;
 }
 
-.acs-group {
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.acs-1 img {
-    width: 200px;
-    padding-bottom: 100px;
-}
-
 .voluntariados {
     padding: 100px;
     background-color: #e1e2e6;
-    position: relative;
-}
-
-.voluntariado-content {
-    text-align: center;
-    padding: 50px;
 }
 
 .voluntariado-content h2 {
@@ -164,12 +139,6 @@ header {
     margin-bottom: 15px;
 }
 
-.voluntariados-1 p {
-    text-align: center;
-    font-size: 15px;
-    line-height: 20px;
-}
-
 .services {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
     background-position: center;
@@ -186,8 +155,18 @@ header {
 .aircleanspace-content h2 {
     font-size: 55px;
     line-height: 70px;
-    color: rgb(243, 188, 136);
+    color: #f3bc88;
     text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.aircleanspace-content p, .services-1 p, .services-1 h3 {
+    color: #f3bc88;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 
