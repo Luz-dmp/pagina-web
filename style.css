@@ -1,10 +1,11 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -14,28 +15,20 @@ body {
 }
 
 header {
-     background-image: linear-gradient(
-        rgba(0,0,0,0.7), 
-        rgba(0,0,0,0.7)), 
-        url(imagenes/fondo.1.jpg);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
-
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/fondo.1.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
 }
-
-
 
 .logo {
     color: beige;
     font-size: 25px;
     font-weight: 800;
 }
-
-
 
 .menu {
     position: absolute;
@@ -46,41 +39,52 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+.menu .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
 .menu .navbar ul li {
-    position: relative;
     float: left;
 }
+
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
     color: beige;
-    display: block ;
+    display: block;
     font-weight: 600;
 }
-.menu .navbar ul li a:hover{
+
+.menu .navbar ul li a:hover {
     color: #ca7950;
 }
+
 #menu {
     display: none;
 }
-.menu-icono{
+
+.menu-icono {
     width: 25px;
-}
-.menu label{
     cursor: pointer;
-    display: none;
 }
 
-.header-conter {
+.menu label {
+    display: block;
+    cursor: pointer;
+}
+
+.header-content {
     text-align: center;
 }
-.btn-1 {
-    display: inline-block;
-    padding:  11px 15px;
-    background-color: #ffdfae;
-    color: #323337;
-    text-transform: uppercase;
-}
+
 .header-content h1 {
     font-size: 75px;
     line-height: 80px;
@@ -88,20 +92,20 @@ header {
     text-transform: uppercase;
     margin-bottom: 35px;
 }
+
 .header-content p {
     font-size: 20px;
     color: #dfdada;
-    padding: 0 250px ;
+    padding: 0 250px;
     margin-bottom: 25px;
 }
-
 
 .acs-content {
     text-align: center;
     background-color: rgb(240, 226, 209);
-    padding: 250px;
-    position: relative;
+    padding: 100px;
 }
+
 .acs-content h2 {
     font-size: 55px;
     line-height: 70px;
@@ -110,217 +114,156 @@ header {
     padding: 0 250px;
     margin-bottom: 35px;
 }
+
 .txt-p {
     font-size: 16px;
     color: #323337;
     padding: 0 250px;
     margin-bottom: 50px;
 }
+
 .acs-group {
-    position: relative;
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
 .acs-1 img {
     width: 200px;
     padding-bottom: 100px;
 }
-.acs-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 100;
-
-}
-
 
 .voluntariados {
-   padding: 250px;
-   background-color: #e1e2e6;
-   position: relative;
-   
+    padding: 100px;
+    background-color: #e1e2e6;
+    position: relative;
 }
+
 .voluntariado-content {
     text-align: center;
-    padding: 250px;
+    padding: 50px;
 }
+
 .voluntariado-content h2 {
     font-size: 55px;
     line-height: 70px;
     color: #323337;
     text-transform: uppercase;
-    padding: 0 250px;
     margin-bottom: 15px;
 }
-.voluntariado-group{
-    padding: 50px;
-}
-.voluntariado-content img {
-    width: 250px;
-}
-.voluntariado-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
 .voluntariado-group {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
 }
+
 .voluntariados-1 h3 {
     text-align: center;
     color: #323337;
     font-size: 20px;
     margin-bottom: 15px;
 }
+
 .voluntariados-1 p {
     text-align: center;
     font-size: 15px;
     line-height: 20px;
-    padding: 100;
-    margin-bottom: 25px;
 }
 
-
 .services {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 250px;
+    padding: 100px;
 }
+
 .aircleanspace-content {
     text-align: center;
 }
-.aircleanspace-content h2{
+
+.aircleanspace-content h2 {
     font-size: 55px;
     line-height: 70px;
     color: rgb(243, 188, 136);
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.aircleanspace-content p {
-    font-size: 16px;
-    color: #e1e2e6;
-    margin-bottom: 50px;
-    padding: 0 100px;
-}
-.services-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-.services-1 {
-    padding-left: 0 100px;
-}
-.services-1 h3 {
-    color: bisque;
-    font: size 18px ;
-}
-
 
 .registro {
-    padding: 250px;
-    padding-bottom: 250px;
-   position: relative;
-   box-sizing: border-box;
-   width: 400px;
-background-color: darkblue;
-padding: 30px;
-margin: auto;
-margin-top: 100px;
-margin-bottom: 100px;
-border-radius: 4px;
-color: beige;
+    padding: 30px;
+    width: 400px;
+    background-color: darkblue;
+    color: beige;
+    border-radius: 4px;
+    margin: 50px auto;
 }
 
-
-@media (max-width <= 800px) {
-
-    body {
-        font-size: 14px; 
-    }
-
-    .logo{
+@media (max-width: 800px) {
+    .logo {
         font-size: 20px;
     }
-    .menu-icono {
-        width: 20px;
+
+    .menu .navbar {
+        display: none;
     }
+
     .header-content h1 {
         font-size: 40px;
     }
-    
+
     .header-content p {
         font-size: 14px;
-        padding: 0 20px; /
+        padding: 0 20px;
     }
 
-    .menu .navbar ul {
+    .acs-content, .voluntariado-content, .services, .registro {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .acs-content h2, .voluntariado-content h2 {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 0 10px;
+    }
+
+    .txt-p {
+        font-size: 14px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .acs-group, .voluntariado-group {
         flex-direction: column;
+        align-items: center;
     }
 
-    .menu .navbar ul li {
-        float: none; 
+    .acs-1, .voluntariados-1, .services-1 {
+        margin: 20px 0;
+        width: 100%;
     }
-
-        .acs-group, .voluntariado-group {
-            flex-direction: row; 
-            justify-content: space-between; 
-        }
-    
-        .acs-1, .voluntariados-1 {
-            flex: 1;
-            padding: 20px; 
-        }
-
-    .services {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/fondo.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 40px 20px;
-    }
-    .services-group {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-    }
-    .services-1 {
-        margin: 20px 0; 
-    }
-    
 
     .registro {
-        width: 90%; 
-        padding: 40px 20px; 
-        background-color: darkblue;
-        margin: auto;
-        border-radius: 4px;
-        color: beige;
+        width: 90%;
+        padding: 20px;
     }
-    .registro form {
+
+    .menu .navbar {
+        display: none;
+    }
+
+    .menu .navbar.show {
         display: flex;
-        flex-direction: column; 
-    }
-    .registro input {
-        margin: 10px 0; 
-        padding: 10px; 
-    }
-    .registro button {
-        padding: 10px; 
-        cursor: pointer; 
     }
 }
-
-
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.show {
+    display: flex;
 }
