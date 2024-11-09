@@ -40,20 +40,14 @@ header {
     justify-content: space-between;
 }
 
-.menu .navbar {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #333;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
+.menu .navbar ul li {
+    position: relative;
+    float: left;
 }
 
 .menu .navbar ul li a {
     font-size: 18px;
-    padding: 15px;
+    padding: 20px;
     color: beige;
     display: block;
     font-weight: 600;
@@ -69,11 +63,23 @@ header {
 
 .menu-icono {
     width: 25px;
+}
+
+.menu label {
     cursor: pointer;
+    display: none;
 }
 
 .header-content {
     text-align: center;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 15px;
+    background-color: #ffdfae;
+    color: #323337;
+    text-transform: uppercase;
 }
 
 .header-content h1 {
@@ -94,7 +100,8 @@ header {
 .acs-content {
     text-align: center;
     background-color: rgb(240, 226, 209);
-    padding: 100px;
+    padding: 250px;
+    position: relative;
 }
 
 .acs-content h2 {
@@ -113,9 +120,32 @@ header {
     margin-bottom: 50px;
 }
 
+.acs-group {
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.acs-1 img {
+    width: 200px;
+    padding-bottom: 100px;
+}
+
+.acs-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .voluntariados {
-    padding: 100px;
+    padding: 250px;
     background-color: #e1e2e6;
+    position: relative;
+}
+
+.voluntariado-content {
+    text-align: center;
+    padding: 250px;
 }
 
 .voluntariado-content h2 {
@@ -123,6 +153,7 @@ header {
     line-height: 70px;
     color: #323337;
     text-transform: uppercase;
+    padding: 0 250px;
     margin-bottom: 15px;
 }
 
@@ -139,13 +170,21 @@ header {
     margin-bottom: 15px;
 }
 
+.voluntariados-1 p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 100;
+    margin-bottom: 25px;
+}
+
 .services {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px;
+    padding: 250px;
 }
 
 .aircleanspace-content {
@@ -155,13 +194,16 @@ header {
 .aircleanspace-content h2 {
     font-size: 55px;
     line-height: 70px;
-    color: #f3bc88;
+    color: rgb(243, 188, 136);
     text-transform: uppercase;
     margin-bottom: 50px;
 }
 
-.aircleanspace-content p, .services-1 p, .services-1 h3 {
-    color: #f3bc88;
+.aircleanspace-content p {
+    font-size: 16px;
+    color: #e1e2e6;
+    margin-bottom: 50px;
+    padding: 0 100px;
 }
 
 .services-group {
@@ -170,23 +212,31 @@ header {
     margin-bottom: 50px;
 }
 
+.services-1 h3 {
+    color: bisque;
+    font-size: 18px;
+}
+
 .registro {
     padding: 30px;
     width: 400px;
     background-color: darkblue;
-    color: beige;
+    margin: 100px auto;
     border-radius: 4px;
-    margin: 50px auto;
+    color: beige;
 }
 
 @media (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
 
     .logo {
         font-size: 20px;
     }
 
-    .menu .navbar {
-        display: none;
+    .menu-icono {
+        width: 20px;
     }
 
     .header-content h1 {
@@ -198,39 +248,68 @@ header {
         padding: 0 20px;
     }
 
-    .acs-content, .voluntariado-content, .services, .registro {
-        padding: 20px;
-        text-align: center;
+    .menu .navbar ul {
+        flex-direction: column;
     }
 
-    .acs-content h2, .voluntariado-content h2 {
-        font-size: 32px;
-        line-height: 40px;
-        padding: 0 10px;
-    }
-
-    .txt-p {
-        font-size: 14px;
-        padding: 0 10px;
-        margin-bottom: 20px;
+    .menu .navbar ul li {
+        float: none;
     }
 
     .acs-group, .voluntariado-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .acs-1, .voluntariados-1 {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .services {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/fondo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 20px;
+    }
+
+    .services-group {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .acs-1, .voluntariados-1, .services-1 {
+    .services-1 {
         margin: 20px 0;
-        width: 100%;
     }
 
     .registro {
         width: 90%;
-        padding: 20px;
+        padding: 40px 20px;
+        background-color: darkblue;
+        margin: auto;
+        border-radius: 4px;
+        color: beige;
+    }
+
+    .registro form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .registro input {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .registro button {
+        padding: 10px;
+        cursor: pointer;
     }
 }
 
-.show {
-    display: flex;
+img {
+    max-width: 100%;
+    height: auto;
 }
