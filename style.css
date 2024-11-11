@@ -1,4 +1,4 @@
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,23 +41,19 @@ header {
 }
 
 .menu .navbar {
-    display: flex;
+    display: none;
+    flex-direction: column;
     align-items: center;
-    list-style: none;
-}
-
-.menu .navbar ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.menu .navbar ul li {
-    position: relative;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
 }
 
 .menu .navbar ul li a {
     font-size: 18px;
-    padding: 20px;
+    padding: 15px;
     color: beige;
     display: block;
     font-weight: 600;
@@ -67,18 +63,13 @@ header {
     color: #ca7950;
 }
 
+#menu {
+    display: none;
+}
+
 .menu-icono {
-    display: none;
-    cursor: pointer;
     width: 25px;
-}
-
-#menu-checkbox {
-    display: none;
-}
-
-.menu label {
-    display: none;
+    cursor: pointer;
 }
 
 .header-content {
@@ -100,44 +91,102 @@ header {
     margin-bottom: 25px;
 }
 
-.acs-content, .voluntariados, .services {
-    padding: 50px;
+.acs-content {
     text-align: center;
+    background-color: rgb(240, 226, 209);
+    padding: 100px;
 }
 
-.acs-content h2, .voluntariado-content h2, .aircleanspace-content h2 {
+.acs-content h2 {
     font-size: 55px;
+    line-height: 70px;
     color: rgb(243, 188, 136);
     text-transform: uppercase;
+    padding: 0 250px;
     margin-bottom: 35px;
 }
 
-.services-group, .acs-group, .voluntariado-group {
+.txt-p {
+    font-size: 16px;
+    color: #323337;
+    padding: 0 250px;
+    margin-bottom: 50px;
+}
+
+.voluntariados {
+    padding: 100px;
+    background-color: #e1e2e6;
+}
+
+.voluntariado-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.voluntariado-group {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.voluntariados-1 h3 {
+    text-align: center;
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.services {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+}
+
+.aircleanspace-content {
+    text-align: center;
+}
+
+.aircleanspace-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #f3bc88;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.aircleanspace-content p, .services-1 p, .services-1 h3 {
+    color: #f3bc88;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.registro {
+    padding: 30px;
+    width: 400px;
+    background-color: darkblue;
+    color: beige;
+    border-radius: 4px;
+    margin: 50px auto;
 }
 
 @media (max-width: 800px) {
-    .menu-icono {
-        display: block;
-    }
 
-    #menu-checkbox:checked ~ .navbar {
-        display: flex;
-        flex-direction: column;
+    .logo {
+        font-size: 20px;
     }
 
     .menu .navbar {
         display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
     }
 
     .header-content h1 {
@@ -149,33 +198,39 @@ header {
         padding: 0 20px;
     }
 
-    .services-group, .acs-group, .voluntariado-group {
+    .acs-content, .voluntariado-content, .services, .registro {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .acs-content h2, .voluntariado-content h2 {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 0 10px;
+    }
+
+    .txt-p {
+        font-size: 14px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .acs-group, .voluntariado-group {
         flex-direction: column;
         align-items: center;
     }
+
+    .acs-1, .voluntariados-1, .services-1 {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .registro {
+        width: 90%;
+        padding: 20px;
+    }
 }
 
-/* Productos */
-.products-section {
+.show {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.products-item {
-    flex: 1 1 200px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
-
-.products-item h3 {
-    color: #333;
-    font-size: 18px;
-}
-
-.products-item p {
-    color: #666;
-    font-size: 15px;
 }
