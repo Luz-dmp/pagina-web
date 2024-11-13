@@ -1,11 +1,10 @@
-* {
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -15,54 +14,79 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/fondo.1.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
+     background-image: linear-gradient(
+        rgba(0,0,0,0.7), 
+        rgba(0,0,0,0.7)), 
+        url(imagenes/fondo.1.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+
 }
+
+
 
 .logo {
     color: beige;
     font-size: 25px;
-    text-transform: uppercase;
     font-weight: 800;
 }
 
+
+
 .menu {
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 0;
     right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.menu .navbar{
+  display: none;
+  flex-direction: column;
+  align-content: center
+  background-color: #333;;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
 .menu .navbar ul li a {
     font-size: 18px;
-    padding: 20px;
+    padding: 15px;
     color: beige;
-    display: block;
-    font-weight: bold;
+    display: block ;
+    font-weight: 600;
 }
-.menu .navbar ul li a:hover {
+.menu .navbar ul li a:hover{
     color: #ca7950;
 }
 #menu {
     display: none;
 }
-.menu-icono {
+.menu-icono{
     width: 25px;
-}
-.menu label {
-  cursor: pointer;
-  display: none;
+    cursor: pointer;
 }
 
-.header-content {
+
+
+.header-conter {
     text-align: center;
+}
+.btn-1 {
+    display: inline-block;
+    padding:  11px 15px;
+    background-color: #ffdfae;
+    color: #323337;
+    text-transform: uppercase;
 }
 .header-content h1 {
     font-size: 75px;
@@ -74,7 +98,7 @@ header {
 .header-content p {
     font-size: 20px;
     color: #dfdada;
-    padding: 0 250px;
+    padding: 0 250px ;
     margin-bottom: 25px;
 }
 
@@ -82,7 +106,7 @@ header {
 .acs-content {
     text-align: center;
     background-color: rgb(240, 226, 209);
-    padding: 100px;
+    padding: 250px;
 }
 .acs-content h2 {
     font-size: 55px;
@@ -100,9 +124,11 @@ header {
 }
 
 
+
+
 .voluntariados {
-    padding: 100px;
-    background-color: #e1e2e6;
+   padding: 100px;
+   background-color: #e1e2e6
 }
 .voluntariado-content h2 {
     font-size: 55px;
@@ -111,11 +137,12 @@ header {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-.voluntariado-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
+.voluntariado-group{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
+
 .voluntariados-1 h3 {
     text-align: center;
     color: #323337;
@@ -124,25 +151,29 @@ header {
 }
 
 
+
 .services {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px;
+    padding: 250px;
 }
 .aircleanspace-content {
     text-align: center;
 }
-.aircleanspace-content h2 {
+.aircleanspace-content h2{
     font-size: 55px;
     line-height: 70px;
     color: #f3bc88;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.aircleanspace-content p, .services-1 p, .services-1 h3 {
+.aircleanspace-content p, services-1 p, services-1 h3{
     color: #f3bc88;
 }
 .services-group {
@@ -154,75 +185,106 @@ header {
 
 .registro {
     padding: 30px;
-    width: 400px;
-    background-color: darkblue;
-    color: beige;
-    border-radius: 4px;
-    margin: 50px auto;
+   width: 400px;
+background-color: darkblue;
+color: beige;
+border-radius: 4px;
+margin: 50px auto;
 }
 
 
 @media (max-width: 800px) {
 
-    .logo {
+
+    .logo{
         font-size: 20px;
     }
-    
-    .menu label {
-      display: initial;
-    }
-    .menu .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
+    .menu .navbar{
       display: none;
     }
-    .menu .navbarul li {
-      width: 100%;
-    }
-    #menu:checked ~ .navbar{
-      display: initial;
-    }
-    
     
     .header-content h1 {
         font-size: 40px;
     }
+    
     .header-content p {
         font-size: 14px;
-        padding: 0 20px;
+        padding: 0 20px; /
     }
     
-    .acs-content, .voluntariado-content, .services, .registro {
-        padding: 20px;
-        text-align: center;
-    }
-    .acs-content h2, .voluntariado-content h2 {
-        font-size: 32px;
-        line-height: 40px;
-        padding: 0 10px;
-    }
-    .txt-p {
-        font-size: 14px;
-        padding: 0 10px;
-        margin-bottom: 20px;
-    }
-    .acs-group, .voluntariado-group {
-        flex-direction: column;
-        align-items: center;
-    }
-    .acs-1, .voluntariados-1, .services-1 {
-        margin: 20px 0;
-        width: 100%;
+    .acs-content, .voluntariado-content , .services , .registro{
+      padding: 20px;
+      text-align: center;
     }
 
+    .acs-content h2, .voluntariado-content h2 {
+      font-size: 32px;
+      line-height: 40px;
+      padding: 0 10 px;
+    }
+    
+    .txt-p{
+      font-size: 14px;
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+    
+    .acs-group, .voluntariado-group{
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .acs-1, .voluntariados-1, .services-1 {
+      margin: 20px 0;
+      width: 100%;
+    }
+    
+    .services {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagenes/fondo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 20px;
+    }
+    .services-group {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .services-1 {
+        margin: 20px 0; 
+    }
+    
 
     .registro {
-        width: 90%;
-        padding: 20px;
+        width: 90%; 
+        padding: 40px 20px; 
+        background-color: darkblue;
+        margin: auto;
+        border-radius: 4px;
+        color: beige;
+    }
+    .registro form {
+        display: flex;
+        flex-direction: column; 
+    }
+    .registro input {
+        margin: 10px 0; 
+        padding: 10px; 
+    }
+    .registro button {
+        padding: 10px; 
+        cursor: pointer; 
     }
 }
-.show {
-    display: flex;
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.show { 
+display: flex;
 }
