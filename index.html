@@ -1,134 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirCleanSpace</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <header class="header">
 
-    <div class="menu container">
-        <a href="#" class="logo">logo</a>
-        <input type="checkbox" id="menu" />
-        <label for="menu">
-            <img src="images/menu.png" class="menu-icono" alt="">
-        </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Voluntariados</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Registro</a></li>
-                </ul>
-            </nav>
+<header class="header">
+    <div class="menu">
+        <div class="logo">AirCleanSpace</div>
+        <div class="menu-icono" id="menu-icono">&#9776;</div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="voluntariado.html">Voluntariados</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
-
-    <div class="header-content container">
-
-        <h1>Air Clean Space</h1>
-        <p>Mejorando la calidad del aire en Cartagena</p>
-
-    </div>
-
 </header>
 
-<div class="acs-content container">
-    <h2>¿Qué es ACS?</h2>
-    <p class="txt-p">
-        Air Clean Space es una iniciativa para 
-        mejorar la calidad del aire en Cartagena.
-        Utilizamos biofiltros de microalgas para 
-        absorber el CO2 y purificar el aire.
-    </p>
-    <div class="acs-group">
-        <div class="asc-1">
-            <img src="imagenes/Captura de pantalla 2024-10-28 160643.png" alt="">
-            <h2>¿Cómo Funcionamos?</h2>
-            <p>
-                Nuestros biofiltros combinan carbón activado
-                y cultivos de microalgas como la "Chlorella 
-                Vulgaris",que absorben CO2 y liberan oxígeno.
-
-            </p>
-        </div>
-    </div>
-</div>
-  </header>
-
-  <section class="Voluntariados">
-   
-    <div class="voluntariado-content container">
-       
-        <h2>Campaña de Cuidado del Aire</h2>
-
-        <img src="imagenes/voluntariados.jpg" alt="">
-        <p class="txt-p">
-            Air Clean Space se enfoca en sensibilizar a las personas sobre la contaminación del aire y organizar campañas de recolección de residuos.
-        </p>
-        <div class="voluntariado-group">
-            <div class="voluntariados-1">
-                <h3>Sensibilización</h3>
-                <p>
-                    Involucrar a la comunidad para educar sobre la contaminación del aire y los gases de efecto invernadero.
-                </p>
-            </div>
-            <div class="voluntariados-1">
-                <h3>Monitoreo</h3>
-                <p>
-                    Los voluntarios podrían ayudar a monitorear la calidad del aire en diferentes zonas de Cartagena, registrando niveles de contaminación para analizar el impacto del proyecto.
-                </p>
-            </div>
-            <div class="voluntariados-1">
-                <h3>Mantenimiento</h3>
-                <p>
-                    Los voluntarios podrían participar en la instalación y mantenimiento de los biofiltros de Chlorella vulgaris, asegurando que funcionen correctamente en las zonas más afectadas.
-                </p>
-            </div>
-        </div>
-    </div>
+<section class="section">
+    <h1>Bienvenido a AirCleanSpace</h1>
+    <p>Mejorando la calidad del aire en Cartagena</p>
+    <img src="imagenes/Captura de pantalla 2024-10-28 160643.png" alt="Voluntariado 1">
 </section>
 
-<main class="services">
-    <div class="aircleanspace-content container">
-        <h2>Productos</h2>
-        
-        <div class="services-group">
-            <div class="services-1">
-                <h3>Purificadores de aire portátiles</h3>
-                <p>
-                    Usan tecnología de microalgas para reducir el CO2 y generar oxígeno.
-                </p>
-            </div>
-            <div class="services-1">
-                <h3>Filtros de aire domésticos</h3>
-                <p>
-                    Equipos diseñados para reducir los gases de efecto invernadero en espacios cerrados.
-                </p>
-            </div>
-            <div class="services-1">
-                <h3>Sistemas de filtración industrial</h3>
-                <p>
-                    Grandes biofiltros que mejoran la calidad del aire en zonas industriales.
-                </p>
-            </div>
-        </div>
-        <a href="#" class="btn-1">Más Información Productos</a>
-    </div>
-</main>
+<div class="section">
+    <h2>¿Qué es ACS?</h2>
+    <p>Air Clean Space es una iniciativa para mejorar la calidad del aire en Cartagena. Utilizamos biofiltros de microalgas para absorber el CO2 y purificar el aire.</p>
+    
+    <h2>¿Cómo Funcionamos?</h2>
+    <p>Combinamos carbón activado y cultivos de microalgas como la "Chlorella Vulgaris", que absorben CO2 y liberan oxígeno.</p>
+</div> 
 
-
-    <div class="registro">
-        <h2>Registro</h2>
-        <form action="/registrer" method="post">
-            <input type="text" name="nombre_usuario" placeholder="Nombre de usuario" required>
-            <input type="email" name="correo" placeholder="Correo electrónico" required>
-            <input type="password" name="contraseña" placeholder="Contraseña" required>
-            <input type="password" name="confirmar_contraseña" placeholder="Confirmar contraseña" required>
-            <button type="submit">Registrarse</button>
-        </form>
-    </div>
+<script src="js/script.js" defer></script>
 </body>
 </html>
