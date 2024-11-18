@@ -1,4 +1,7 @@
 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -210,13 +213,22 @@ body {
     padding: 0 20px;
 }
 
+header {
+        background-image: none; 
+        background-color: #ca7950;
+        min-height: 20vh;
+        padding: 20px 10px; 
+    }
 
-.header {
-    background-color: #ca7950;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    .header-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .header-content p {
+        font-size: 14px; 
+        padding: 0 20px;
+    }
 
 .header .menu {
     display: flex;
