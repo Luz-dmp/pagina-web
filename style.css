@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +54,7 @@ header {
   display: none;
   flex-direction: column;
   align-content: center;
-  background-color: #333;;
+  background-color: #333;
   width: 100%;
   position: absolute;
   top: 60px;
@@ -208,16 +209,16 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
-header {
-        background-image: none; 
+    .header {
+      
+        background-image: none;
         background-color: #ca7950;
-        min-height: 20vh;
+        min-height: 5vh; 
         padding: 20px 10px; 
     }
 
     .header-content h1 {
-        font-size: 32px;
+        font-size: 32px; 
         line-height: 1.2;
     }
 
@@ -225,6 +226,7 @@ header {
         font-size: 14px; 
         padding: 0 20px;
     }
+}
 
 .header .menu {
     display: flex;
@@ -350,7 +352,7 @@ button:hover {
     .navbar ul li {
         margin: 0;
     }
-}
+
 
 
 .section {
