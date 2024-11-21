@@ -21,15 +21,20 @@ body {
 
 
 header {
-    background-color: #ca7950;
-    color: #fff;
-    padding: 20px;
+    background-image: linear-gradient (
+    rbga(0,0,0,0.7),
+    rbga(0,0,0,0.7)),
+    url(imágenes/fondo.1.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
+    color: beige;
     font-size: 28px;
     font-weight: bold;
 }
@@ -132,9 +137,21 @@ button:hover {
 
 
 @media (max-width: 768px) {
+ 
+.header {
+  background-image: none;
+  background-color: #ca7950;
+  min-height: 5vh;
+  padding: 20px 10px;
+    
+
     .menu-icono {
         display: block;
     }
+
+    .header-content h1{
+     font-size: 32px;
+     line-height: 1,2;
 
     .navbar {
         display: none;
@@ -142,6 +159,7 @@ button:hover {
         background-color: #333;
         padding: 10px;
     }
+ 
 
     .navbar.active {
         display: flex;
