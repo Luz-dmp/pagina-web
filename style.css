@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,235 +6,30 @@
     list-style: none;
 }
 
-
 body {
     font-family: "Poppins", sans-serif;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-header {
-     background-image: linear-gradient(
-        rgba(0,0,0,0.7), 
-        rgba(0,0,0,0.7)), 
-        url(imagenes/fondo.1.jpg);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
-
-}
-
-
-
-.logo {
-    color: beige;
-    font-size: 25px;
-    font-weight: 800;
-}
-
-
-
-.menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu .navbar{
-  display: none;
-  flex-direction: column;
-  align-content: center;
-  background-color: #333;
-  width: 100%;
-  position: absolute;
-  top: 60px;
-  left: 0;
-}
-
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 15px;
-    color: beige;
-    display: block ;
-    font-weight: 600;
-}
-.menu .navbar ul li a:hover{
-    color: #ca7950;
-}
-#menu {
-    display: none;
-}
-.menu-icono{
-    width: 25px;
-    cursor: pointer;
-}
-
-
-
-.header-conter {
-    text-align: center;
-}
-.btn-1 {
-    display: inline-block;
-    padding:  11px 15px;
-    background-color: #ffdfae;
-    color: #323337;
-    text-transform: uppercase;
-}
-.header-content h1 {
-    font-size: 75px;
-    line-height: 80px;
-    color: blanchedalmond;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-}
-.header-content p {
-    font-size: 20px;
-    color: #dfdada;
-    padding: 0 250px ;
-    margin-bottom: 25px;
-}
-
-
-.acs-content {
-    text-align: center;
-    background-color: rgb(240, 226, 209);
-    padding: 250px;
-}
-.acs-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: rgb(243, 188, 136);
-    text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 35px;
-}
-.txt-p {
-    font-size: 16px;
-    color: #323337;
-    padding: 0 250px;
-    margin-bottom: 50px;
-}
-
-
-
-
-.voluntariados {
-   padding: 100px;
-   background-color: #e1e2e6;
-}
-.voluntariado-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #323337;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-.voluntariado-group{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-}
-
-.voluntariados-1 h3 {
-    text-align: center;
-    color: #323337;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-
-
-.services {
-    background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(imagenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 250px;
-}
-.aircleanspace-content {
-    text-align: center;
-}
-.aircleanspace-content h2{
-    font-size: 55px;
-    line-height: 70px;
-    color: #f3bc88;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-.aircleanspace-content p, services-1 p, services-1 h3{
-    color: #f3bc88;
-}
-.services-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-
-.registro {
-    padding: 30px;
-   width: 400px;
-background-color: darkblue;
-color: beige;
-border-radius: 4px;
-margin: 50px auto;
-}
-
-
-@media (max-width: 768px) {
-
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
 }
+
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-    .header {
-      
-        background-image: none;
-        background-color: #ca7950;
-        min-height: 5vh; 
-        padding: 20px 10px; 
-    }
-
-    .header-content h1 {
-        font-size: 32px; 
-        line-height: 1.2;
-    }
-
-    .header-content p {
-        font-size: 14px; 
-        padding: 0 20px;
-    }
+    padding: 20px;
 }
 
-.header .menu {
+
+header {
+    background-color: #ca7950;
+    color: #fff;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
-.menu .logo {
+.logo {
     font-size: 28px;
     font-weight: bold;
 }
@@ -243,33 +37,67 @@ body {
 .menu-icono {
     font-size: 30px;
     cursor: pointer;
-    display: flex;
+    display: none;
 }
 
-  .navbar.active {
-        display: block;
-    }
-
-.navbar ul {
-    list-style-type: none;
+.navbar {
     display: flex;
     gap: 20px;
 }
+
 .navbar ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
+    display: flex;
+    gap: 20px;
+}
 
 .navbar ul li a {
-    color: white;
+    color: #fff;
     font-size: 18px;
     text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
     color: #f3bc88;
-    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .menu-icono {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section h1, .section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.section p {
+    font-size: 20px;
+    color: #555;
 }
 
 
@@ -277,12 +105,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 40px 20px;
+    gap: 15px;
+    padding: 20px;
 }
 
 .producto-item, .voluntariado-item {
-    width: 30%;
-    margin: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -297,7 +127,7 @@ body {
 
 .producto-item img, .voluntariado-item img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
     border-bottom: 5px solid #ca7950;
 }
@@ -320,54 +150,11 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #f3bc88;
-}
-
-
-#gracias {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #e1e2e6;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-
-
-
-
-    .menu-icono {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    
-
-    .navbar ul li {
-        margin: 0;
-    }
-
-
-
-.section {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.section h1, .section h2 {
-    font-size: 36px;
-    color: #333;
-}
-
-.section p {
-    font-size: 20px;
-    color: #555;
 }
 
 
@@ -380,7 +167,7 @@ form {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-form input, form textarea, form select {
+form input, form textarea {
     width: 100%;
     padding: 12px;
     margin-top: 10px;
@@ -390,34 +177,14 @@ form input, form textarea, form select {
 }
 
 form button {
-    background-color: #ca7950;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #f3bc88;
+    margin-top: 15px;
 }
 
 
-#contacto, #registro {
-    background-color: #fff;
-    padding: 40px 20px;
+#gracias {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e1e2e6;
+    margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    margin: 0 auto;
 }
-
-#contacto h2, #registro h2 {
-    font-size: 32px;
-    color: #ca7950;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-
