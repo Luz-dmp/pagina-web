@@ -23,8 +23,8 @@ body {
 header {
     justify-content: space-between;
     background-image: linear-gradient (
-    rbga(0,0,0,0.7),
-    rbga(0,0,0,0.7)),
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
     url(imágenes/fondo.1.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -142,8 +142,7 @@ button:hover {
 .header {
   background-image: none;
   background-color: #ca7950;
-  min-height: 5vh;
-  padding: 20px 10px;
+  height: auto;
     
 
     .menu-icono {
