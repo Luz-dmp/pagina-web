@@ -21,6 +21,7 @@ body {
 
 
 header {
+    justify-content: space-between;
     background-image: linear-gradient (
     rbga(0,0,0,0.7),
     rbga(0,0,0,0.7)),
