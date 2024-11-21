@@ -1,29 +1,38 @@
 const menuIcono = document.getElementById('menu-icono');
 const navbar = document.getElementById('navbar');
-const formulario = document.querySelector('form');
 
 menuIcono.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-formulario.addEventListener('submit', (event) => {
-    event.preventDefault();
+const formulario = document.querySelector('form');
 
+formulario.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+
+    
+    
     const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('email').value;
     const telefono = document.getElementById('telefono').value;
+    const voluntariado = document.getElementById('voluntariado').value;
+
 
     if (nombre === '' || email === '' || telefono === '') {
         alert('Por favor, completa todos los campos.');
         return;
     }
 
-    
+  
     console.log(`Formulario enviado:
     Nombre: ${nombre}
     Correo: ${email}
-    Teléfono: ${telefono}`);
+    Teléfono: ${telefono}
+    Voluntariado seleccionado: ${voluntariado}`);
 
-    
-    window.location.href = "gracias.html";
+
+    alert('¡Gracias por tu inscripción! Nos pondremos en contacto contigo pronto.');
+
+  
+    formulario.reset();
 });
