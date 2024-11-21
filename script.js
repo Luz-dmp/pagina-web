@@ -18,12 +18,12 @@ formulario.addEventListener('submit', (event) => {
         return;
     }
 
-    // Mostrar un mensaje en consola (opcional)
+    
     console.log(`Formulario enviado:
     Nombre: ${nombre}
     Correo: ${email}
     Teléfono: ${telefono}`);
 
-    // Redirigir a la página de "Gracias"
+    
     window.location.href = "gracias.html";
 });
