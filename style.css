@@ -62,6 +62,75 @@ header {
 }
 
 
+
+#productos, #voluntariados {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.producto-item, .voluntariado-item {
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: 300px; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center; 
+}
+
+
+.producto-item:hover, .voluntariado-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.producto-item img, .voluntariado-item img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+    border-bottom: 5px solid #ca7950;
+}
+
+
+.producto-info, .voluntariado-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.producto-info h3, .voluntariado-info h3 {
+    font-size: 20px;
+    color: #ca7950;
+    margin-bottom: 10px;
+}
+
+.producto-info p, .voluntariado-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+button {
+    background-color: #ca7950;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f3bc88;
+}
+
+
+
+
 @media (max-width: 768px) {
     .menu-icono {
         display: block;
@@ -100,18 +169,19 @@ header {
     color: #555;
 }
 
-
 #productos, #voluntariados {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     padding: 20px;
+    align-items: center;
 }
 
 .producto-item, .voluntariado-item {
     width: 100%;
-    max-width: 300px;
+    flex: 1 1 100%; 
+    max-width: 90%;
     margin: 10px;
     background-color: #ffffff;
     border-radius: 10px;
