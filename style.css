@@ -142,7 +142,8 @@ button:hover {
 .header {
   background-image: none;
   background-color: #ca7950;
-  height: auto;
+  min-height: 5vh;
+  padding: 20px 10px;
     
 
     .menu-icono {
