@@ -1,424 +1,261 @@
-*{
-    Margin: 0;
-    Padding: 0;
-    Box-sizing: border-box;
-    Text-decoration: none;
-    List-style: none;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-
-Body {
-    Font-family: “Poppins”, sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
+
 
 .container {
-    Margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-Header {
-     Background-image: linear-gradient(
-        Rgba(0,0,0,0.7), 
-        Rgba(0,0,0,0.7)), 
-        url(imágenes/fondo.1.jpg);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
-
+header {
+    background-color: #ca7950;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-
 
 .logo {
-    Color: beige;
-    Font-size: 25px;
-    Font-weight: 800;
-}
-
-
-
-.menu {
-    Position: absolute;
-    Top: 0;
-    Left: 0;
-    Right: 0;
-    Display: flex;
-    Align-items: center;
-    Justify-content: space-between;
-}
-
-.menu .navbar{
-  Display: none;
-  Flex-direction: column;
-  Align-content: center;
-  Background-color: #333;
-  Width: 100%;
-  Position: absolute;
-  Top: 60px;
-  Left: 0;
-}
-
-.menu .navbar ul li a {
-    Font-size: 18px;
-    Padding: 15px;
-    Color: beige;
-    Display: block ;
-    Font-weight: 600;
-}
-.menu .navbar ul li a:hover{
-    Color: #ca7950;
-}
-#menu {
-    Display: none;
-}
-.menu-icono{
-    Width: 25px;
-    Cursor: pointer;
-}
-
-
-
-.header-conter {
-    Text-align: center;
-}
-.btn-1 {
-    Display: inline-block;
-    Padding:  11px 15px;
-    Background-color: #ffdfae;
-    Color: #323337;
-    Text-transform: uppercase;
-}
-.header-content h1 {
-    Font-size: 75px;
-    Line-height: 80px;
-    Color: blanchedalmond;
-    Text-transform: uppercase;
-    Margin-bottom: 35px;
-}
-.header-content p {
-    Font-size: 20px;
-    Color: #dfdada;
-    Padding: 0 250px ;
-    Margin-bottom: 25px;
-}
-
-
-.acs-content {
-    Text-align: center;
-    Background-color: rgb(240, 226, 209);
-    Padding: 250px;
-}
-.acs-content h2 {
-    Font-size: 55px;
-    Line-height: 70px;
-    Color: rgb(243, 188, 136);
-    Text-transform: uppercase;
-    Padding: 0 250px;
-    Margin-bottom: 35px;
-}
-.txt-p {
-    Font-size: 16px;
-    Color: #323337;
-    Padding: 0 250px;
-    Margin-bottom: 50px;
-}
-
-
-
-
-.voluntariados {
-   Padding: 100px;
-   Background-color: #e1e2e6;
-}
-.voluntariado-content h2 {
-    Font-size: 55px;
-    Line-height: 70px;
-    Color: #323337;
-    Text-transform: uppercase;
-    Margin-bottom: 15px;
-}
-.voluntariado-group{
-  Display: flex;
-  Justify-content: space-between;
-  Margin-bottom: 25px;
-}
-
-.voluntariados-1 h3 {
-    Text-align: center;
-    Color: #323337;
-    Font-size: 20px;
-    Margin-bottom: 15px;
-}
-
-
-
-.services {
-    Background-image: linear-gradient(
-        Rgba(0,0,0,0.7),
-        Rgba(0,0,0,0.7)),
-        url(imágenes/Captura\ de\ pantalla\ 2024-10-28\ 160705.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 250px;
-}
-.aircleanspace-content {
-    Text-align: center;
-}
-.aircleanspace-content h2{
-    Font-size: 55px;
-    Line-height: 70px;
-    Color: #f3bc88;
-    Text-transform: uppercase;
-    Margin-bottom: 50px;
-}
-.aircleanspace-content p, services-1 p, services-1 h3{
-    Color: #f3bc88;
-}
-.services-group {
-    Display: flex;
-    Justify-content: space-between;
-    Margin-bottom: 50px;
-}
-
-
-.registro {
-    Padding: 30px;
-   Width: 400px;
-Background-color: darkblue;
-Color: beige;
-Border-radius: 4px;
-Margin: 50px auto;
-}
-
-
-@media (max-width: 768px) {
-
-Body {
-    Font-family: ‘Poppins’, sans-serif;
-    Line-height: 1.6;
-    Background-color: #f4f4f4;
-}
-
-.container {
-    Max-width: 1200px;
-    Margin: 0 auto;
-    Padding: 0 20px;
-}
-    .header {
-      
-        Background-image: none;
-        Background-color: #ca7950;
-        Min-height: 5vh; 
-        Padding: 20px 10px; 
-    }
-
-    .header-content h1 {
-        Font-size: 32px; 
-        Line-height: 1.2;
-    }
-
-    .header-content p {
-        Font-size: 14px; 
-        Padding: 0 20px;
-    }
-}
-
-.header .menu {
-    Display: flex;
-    Justify-content: space-between;
-    Align-items: center;
-    Padding: 0 20px;
-}
-
-.menu .logo {
-    Font-size: 28px;
-    Font-weight: bold;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .menu-icono {
-    Font-size: 30px;
-    Cursor: pointer;
-    Display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
 }
 
-  .navbar.active {
-        Display: block;
-    }
+.navbar {
+    display: flex;
+    gap: 20px;
+}
 
 .navbar ul {
-    List-style-type: none;
-    Display: flex;
-    Gap: 20px;
+    display: flex;
+    gap: 20px;
 }
-.navbar ul {
-        Flex-direction: column;
-        Text-align: center;
-        Gap: 15px;
-    }
 
 .navbar ul li a {
-    Color: white;
-    Font-size: 18px;
-    Text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    Color: #f3bc88;
-    Text-decoration: underline;
+    color: #f3bc88;
 }
-
 
 #productos, #voluntariados {
-    Display: flex;
-    Flex-wrap: wrap;
-    Justify-content: center;
-    Padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten automáticamente */
+    justify-content: space-between; /* Alineación uniforme en computadoras */
+    gap: 20px; /* Espaciado entre tarjetas */
+    padding: 20px;
 }
+
 
 .producto-item, .voluntariado-item {
-    Width: 30%;
-    Margin: 20px;
-    Background-color: #ffffff;
-    Border-radius: 10px;
-    Box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    Overflow: hidden;
-    Transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 20px); /* 3 columnas en computadoras */
+    max-width: 300px; /* Limita el tamaño máximo */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center; /* Centrar contenido */
 }
 
+
 .producto-item:hover, .voluntariado-item:hover {
-    Transform: translateY(-10px);
-    Box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
 
 .producto-item img, .voluntariado-item img {
-    Width: 100%;
-    Height: 200px;
-    Object-fit: cover;
-    Border-bottom: 5px solid #ca7950;
+    width: 100%;
+    height: 150px; /* Tamaño uniforme para imágenes */
+    object-fit: cover;
+    border-bottom: 5px solid #ca7950;
 }
 
 .producto-info, .voluntariado-info {
-    Padding: 20px;
-    Text-align: center;
+    padding: 15px;
+    text-align: center;
 }
 
 .producto-info h3, .voluntariado-info h3 {
-    Color: #ca7950;
-    Font-size: 24px;
-    Margin-bottom: 15px;
+    font-size: 20px;
+    color: #ca7950;
+    margin-bottom: 10px;
 }
 
-Button {
-    Background-color: #ca7950;
-    Color: white;
-    Padding: 12px 20px;
-    Border: none;
-    Border-radius: 4px;
-    Cursor: pointer;
+.producto-info p, .voluntariado-info p {
+    font-size: 16px;
+    color: #555;
 }
 
-Button:hover {
-    Background-color: #f3bc88;
+
+button {
+    background-color: #ca7950;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f3bc88;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-icono {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section h1, .section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.section p {
+    font-size: 20px;
+    color: #555;
+}
+
+#productos, #voluntariados {
+    flex-direction: column; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    align-items: center;
+}
+
+.producto-item, .voluntariado-item {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 90%;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.producto-item:hover, .voluntariado-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.producto-item img, .voluntariado-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 5px solid #ca7950;
+}
+
+.producto-info, .voluntariado-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.producto-info h3, .voluntariado-info h3 {
+    color: #ca7950;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ca7950;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f3bc88;
+}
+
+
+form {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 15px;
 }
 
 
 #gracias {
-    Text-align: center;
-    Padding: 60px 20px;
-    Background-color: #e1e2e6;
-    Margin-top: 20px;
-    Border-radius: 10px;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e1e2e6;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-
-
-
-
-    .menu-icono {
-        Display: block;
-    }
-
-    .navbar {
-        Display: none;
-    }
-
-    
-
-    .navbar ul li {
-        Margin: 0;
-    }
-
-
-
-.section {
-    Text-align: center;
-    Padding: 80px 20px;
 }
-
-.section h1, .section h2 {
-    Font-size: 36px;
-    Color: #333;
-}
-
-.section p {
-    Font-size: 20px;
-    Color: #555;
-}
-
-
-Form {
-    Width: 60%;
-    Margin: 30px auto;
-    Padding: 20px;
-    Background-color: #fff;
-    Border-radius: 8px;
-    Box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-Form input, form textarea, form select {
-    Width: 100%;
-    Padding: 12px;
-    Margin-top: 10px;
-    Border-radius: 5px;
-    Border: 1px solid #ccc;
-    Font-size: 16px;
-}
-
-Form button {
-    Background-color: #ca7950;
-    Color: white;
-    Padding: 12px 20px;
-    Border: none;
-    Border-radius: 4px;
-    Cursor: pointer;
-    Transition: background-color 0.3s ease;
-}
-
-Form button:hover {
-    Background-color: #f3bc88;
-}
-
-
-#contacto, #registro {
-    Background-color: #fff;
-    Padding: 40px 20px;
-    Border-radius: 10px;
-    Box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    Width: 50%;
-    Margin: 0 auto;
-}
-
-#contacto h2, #registro h2 {
-    Font-size: 32px;
-    Color: #ca7950;
-    Margin-bottom: 20px;
-    Text-transform: uppercase;
-}
-
-
 
 
