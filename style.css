@@ -21,21 +21,15 @@ body {
 
 
 header {
-    justify-content: space-between;
-    background-image: linear-gradient (
-    rbga(0,0,0,0.7),
-    rbga(0,0,0,0.7)),
-    url(imágenes/fondo.1.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
+    background-color: #ca7950;
+    color: #fff;
+    padding: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    color: beige;
     font-size: 28px;
     font-weight: bold;
 }
@@ -66,8 +60,6 @@ header {
 .navbar ul li a:hover {
     color: #f3bc88;
 }
-
-
 
 #productos, #voluntariados {
     display: flex;
@@ -134,25 +126,10 @@ button:hover {
     background-color: #f3bc88;
 }
 
-
-
-
 @media (max-width: 768px) {
- 
-.header {
-  background-image: none;
-  background-color: #ca7950;
-  min-height: 5vh;
-  padding: 20px 10px;
-    
-
     .menu-icono {
         display: block;
     }
-
-    .header-content h1{
-     font-size: 32px;
-     line-height: 1,2;
 
     .navbar {
         display: none;
@@ -160,7 +137,6 @@ button:hover {
         background-color: #333;
         padding: 10px;
     }
- 
 
     .navbar.active {
         display: flex;
@@ -188,18 +164,20 @@ button:hover {
     color: #555;
 }
 
+
 #productos, #voluntariados {
+    flex-direction: column; 
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     padding: 20px;
-    align-items: center;
 }
 
 .producto-item, .voluntariado-item {
-    width: 100%;
     flex: 1 1 100%; 
+    width: 100%;
     max-width: 90%;
     margin: 10px;
     background-color: #ffffff;
