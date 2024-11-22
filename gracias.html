@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gracias - AirCleanSpace</title>
+    <title>Gracias – AirCleanSpace</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="header">
-    <div class="menu">
-        <div class="logo">AirCleanSpace</div>
-        <div class="menu-icono" id="menu-icono">&#9776;</div>
-        <nav class="navbar" id="navbar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="voluntariado.html">Voluntariados</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<section id="gracias">
-    <h2>¡Gracias por unirte a AirCleanSpace!</h2>
-    <p>Tu registro ha sido exitoso. Te mantendremos informado sobre nuestras iniciativas y productos.</p>
-</section>
-
-<script src="script.js" defer></script>
+    <header class="header">
+        <div class="menu">
+            <div class="logo">AirCleanSpace</div>
+        </div>
+    </header>
+    <section id="gracias">
+        <h2>¡Gracias por registrarte en AirCleanSpace!</h2>
+        <p>Tu cuenta ha sido creada exitosamente. Ahora puedes iniciar sesión para disfrutar de nuestros servicios.</p>
+        <button onclick="iniciarSesion()">Iniciar Sesión</button>
+    </section>
+    <script>
+        // Función para iniciar sesión (redirigir a la página principal o panel)
+        function iniciarSesion() {
+            alert('Redirigiendo a la página de inicio de sesión...');
+            window.location.href = "inicio.html"; // Cambia la URL según tu página de inicio de sesión
+        }
+    </script>
 </body>
 </html>
