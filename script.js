@@ -11,7 +11,7 @@ menuIcono.addEventListener('click', () => {
 const formulario = document.querySelector('form');
 
 formulario.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+    event.preventDefault(); // Evitar recarga de la página
 
     const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('email').value;
@@ -22,14 +22,27 @@ formulario.addEventListener('submit', (event) => {
         return;
     }
 
-    
-    console.log(`Formulario enviado:
-    Nombre: ${nombre}
-    Correo: ${email}
-    Teléfono: ${telefono}`);
+
+    const datosUsuario = {
+        nombre: nombre,
+        email: email,
+        telefono: telefono,
+    };
 
    
-    alert('¡Gracias por tu inscripción! Nos pondremos en contacto contigo pronto.');
+    localStorage.setItem('usuario', JSON.stringify(datosUsuario));
+
+    
+    alert('¡Gracias por tu inscripción! Los datos han sido guardados en LocalStorage.');
 
     formulario.reset(); 
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const datosGuardados = localStorage.getItem('usuario');
+    if (datosGuardados) {
+        const usuario = JSON.parse(datosGuardados);
+        console.log('Datos recuperados del LocalStorage:', usuario);
+    }
 });
