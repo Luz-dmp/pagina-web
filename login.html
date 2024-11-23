@@ -25,11 +25,11 @@
         </form>
     </section>
     <script>
+
         const loginForm = document.querySelector('#login-form');
 
         loginForm.addEventListener('submit', (event) => {
-            event.preventDefault(); // Evitar recarga de la página
-
+            event.preventDefault(); 
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 
@@ -51,6 +51,7 @@
                 alert('Correo o contraseña incorrectos. Inténtalo de nuevo.');
             }
         });
+
     </script>
 </body>
 </html>
