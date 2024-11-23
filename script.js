@@ -10,7 +10,7 @@ menuIcono.addEventListener('click', () => {
 const formulario = document.querySelector('#registro-form');
 
 formulario.addEventListener('submit', (event) => {
-    event.preventDefault(); // Evitar recarga de la página
+    event.preventDefault(); 
 
     const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('email').value;
